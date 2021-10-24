@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         this.layout.setOnClickListener{
             var geradorRGB = Cores()
-            println(geradorRGB.getCorRGB())
+            
             this.cor.text = "" + geradorRGB.getCorRGB()[0] + " " + geradorRGB.getCorRGB()[1] + " " + geradorRGB.getCorRGB()[2] + ""
 
             val corTela = Color.rgb(geradorRGB.getCorRGB()[0], geradorRGB.getCorRGB()[1],  geradorRGB.getCorRGB()[2])
